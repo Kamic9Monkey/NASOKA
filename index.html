@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - FNCIQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div style="display: flex; justify-content: center; align-items: center; padding-top: 10px;">
+        <img src="drapeau.jpg" alt="Drapeau du Québec" style="width: 40px; margin-right: 10px;">
+        <h1 style="margin: 0;">FNCIQ</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="qui_sommes_nous.html">Qui sommes-nous</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+    <main>
+        <h2>Rejoignez le mouvement</h2>
+        <p>Adhérez à la vision d'un Québec libre et souverain. Inscrivez-vous pour recevoir notre manifeste.</p>
+
+        <form action="confirmation.html" method="POST">
+    <label for="nom">Nom Complet :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="courriel">Courriel :</label><br>
+    <input type="email" id="courriel" name="courriel" required><br><br>
+
+    <!-- Champ téléphone obligatoire -->
+    <label for="telephone">Numéro de téléphone :</label><br>
+    <input type="tel" id="telephone" name="telephone" placeholder="514-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <small>Format : 514-000-0000</small><br><br>
+
+    <input type="checkbox" id="principes" name="principes" required>
+    <label for="principes">J'adhère aux principes du FNCIQ.</label><br><br>
+
+    <button type="submit" style="background-color: darkred; color: white; padding: 10px 20px; border: none; cursor: pointer;">S'inscrire</button>
+</form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* 1. Réinitialisation de base */
+body {
+    font-family: 'Times New Roman', serif; /* Classique et sérieux */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fond très clair */
+    color: #333; /* Texte gris foncé pour la lisibilité */
+}
+
+/* 2. Style de l'en-tête et navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    text-align: center; /* Centrera le texte et les liens */
+
+    /* AJOUTEZ CES DEUX LIGNES pour forcer les blocs à se centrer */
+    width: 100%; /* Prend la pleine largeur */
+    margin: 0 auto; /* C'est la ligne magique pour centrer les blocs dans leur parent */
+}
+
+/* De plus, assurez-vous que les marges du <h1> sont à zéro pour éviter le décalage */
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold;
+}
+
+/* 3. Style du formulaire et du contenu principal */
+main {
+    width: 80%;
+    max-width: 600px; /* Limite la largeur pour une meilleure lecture */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Effet modeste */
+}
+
+/* 4. Style du bouton (L'action principale) */
+button {
+    background-color: #990000; /* Rouge, couleur forte */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+/* 4. Style des champs de formulaire */
+form div {
+    margin-bottom: 15px; /* Espace entre les champs */
+}
+
+label {
+    display: block; /* Force l'étiquette à prendre sa propre ligne */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%; /* Important : prend toute la largeur du formulaire */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+}
+
+/* 5. Style du bouton d'action */
+button {
+    background-color: #990000; /* Rouge, couleur forte */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    
+    /* Pour aligner le bouton sur la largeur des champs : */
+    display: block; 
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #660000; /* Assombrissement au survol */
+}
+
+/* 6. Style pour la page de confirmation (facultatif mais recommandé) */
+.success-message {
+    color: green;
+    font-size: 1.5em;
+    text-align: center;
+}
+/* Style pour afficher une image de drapeau à côté du titre H1 */
+header h1 {
+    /* Ceci est le code pour insérer l'image du drapeau */
+    background-image: url('http://googleusercontent.com/image_collection/image_retrieval/12803282950217974899_0');
+    background-repeat: no-repeat; /* N'affiche l'image qu'une seule fois */
+    background-position: center left; /* Place l'image à gauche du texte */
+    background-size: 40px; /* Donne une taille de 40 pixels au drapeau */
+    
+    /* Décalage du texte du titre pour laisser la place au drapeau */
+    padding-left: 50px; 
+    
+    /* Assurez-vous que la marge est à zéro pour le centrage */
+    margin: 0 auto;
+}
