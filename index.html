@@ -24,23 +24,30 @@
         <h2>Rejoignez le mouvement</h2>
         <p>Adhérez à la vision d'un Québec libre et souverain. Inscrivez-vous pour recevoir notre manifeste.</p>
 
-        <form action="confirmation.html" method="POST">
-    <label for="nom">Nom Complet :</label><br>
-    <input type="text" id="nom" name="nom" required><br><br>
+        <form action="https://formsubmit.co/mickalost@gmail.com" method="POST">
+            
+            <!-- Redirection automatique vers votre page de confirmation après l'inscription -->
+            <input type="hidden" name="_next" value="https://nasok-qc.github.io/confirmation.html">
+            
+            <!-- Désactive le captcha pour que l'inscription soit fluide -->
+            <input type="hidden" name="_captcha" value="false">
 
-    <label for="courriel">Courriel :</label><br>
-    <input type="email" id="courriel" name="courriel" required><br><br>
+            <label for="nom">Nom Complet :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
 
-    <!-- Champ téléphone obligatoire -->
-    <label for="telephone">Numéro de téléphone :</label><br>
-    <input type="tel" id="telephone" name="telephone" placeholder="514-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-    <small>Format : 514-000-0000</small><br><br>
+            <label for="courriel">Courriel :</label><br>
+            <input type="email" id="courriel" name="courriel" required><br><br>
 
-    <input type="checkbox" id="principes" name="principes" required>
-    <label for="principes">J'adhère aux principes de NASOK.</label><br><br>
+            <!-- Champ téléphone obligatoire -->
+            <label for="telephone">Numéro de téléphone :</label><br>
+            <input type="tel" id="telephone" name="telephone" placeholder="514-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Format : 514-000-0000</small><br><br>
 
-    <button type="submit" style="background-color: darkred; color: white; padding: 10px 20px; border: none; cursor: pointer;">S'inscrire</button>
-</form>
+            <input type="checkbox" id="principes" name="principes" required>
+            <label for="principes">J'adhère aux principes de NASOK.</label><br><br>
+
+            <button type="submit" style="background-color: darkred; color: white; padding: 10px 20px; border: none; cursor: pointer;">S'inscrire</button>
+        </form>
     </main>
 </body>
 </html>
